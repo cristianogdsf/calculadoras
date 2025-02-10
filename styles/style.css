@@ -1,0 +1,115 @@
+
+:root{
+    --cor-primaria: #FFCDB2;
+    --cor-secundaria: #FFB4A2;
+    --cor-terciaria: #E5989B;
+    --cor-quarternaria: #B5828C;
+}
+
+
+.menu {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    min-width: 160px;
+    padding: 16px;
+    margin: 40px 0 0 40px;
+    text-align: center;
+}
+
+.cabecalho {
+    position: relative;
+    display: inline-block;
+}
+
+.menu__navegacao {
+    margin: 0 0 0 40px ;
+    position: absolute;
+    display: none;
+    font-size: 1.5rem;
+    background-color: var(--cor-terciaria);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.menu__navegacao .menu__navegacao-links {
+    padding: 16px;
+    color: var(--cor-primaria);
+    display: block;
+}
+
+.menu__navegacao .menu__navegacao-links:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quarternaria);
+}
+
+.cabecalho:hover .menu__navegacao {display: block;}
+
+.cabecalho:hover .menu {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quarternaria);
+}
+body {
+    background-color: var(--cor-primaria);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container__title {
+    color: var(--cor-quarternaria);
+}
+
+.container__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+.container__content-form {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quarternaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container__content-form--answer {
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    border: solid 1px var(--cor-quarternaria);
+    border-radius: 8px;
+    color: var(--cor-quarternaria);
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container__content-form--button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-quarternaria);
+    border-radius: 8px;
+    border: solid 1px var(--cor-quarternaria);
+}
+
+.container__content-form--button:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+.container__content-image {
+    width: 50%;
+}

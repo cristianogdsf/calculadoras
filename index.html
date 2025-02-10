@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="menu">MENU</h2>
+        <nav class="menu__navegacao">
+            <a class="menu__navegacao-links" href="index.html">Calculadora IMC</a>
+            <a class="menu__navegacao-links" href="calculadoraFatororial.html">Calculadora Fatorial</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="container__title">Calculadora de IMC</h1>
+        <section class="container__content">
+            <section class="container__content-form">
+                <h2 class="container__content-form--ask">Peso:</h2>
+                <input class="container__content-form--answer" type="number">
+                <h2 class="container__content-form--ask">Altura:</h2>
+                <input class="container__content-form--answer" type="number">
+                <button class="container__content-form--button" id="calcular" onclick="">Calcular</button>
+                <h2 class="container__content-form--result">Resultado</h2>
+            </section>
+            <img class="container__content-image" src="/assets/imagens/imagem-indice.png" alt="Imagem IMC">
+        </section>    
+    </main>
+    <footer></footer>
+</body>
+</html>
