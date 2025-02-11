@@ -8,6 +8,26 @@
     <title>Calculadora Fatorial</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h2 class="menu">MENU</h2>
+        <nav class="menu__navegacao">
+            <a class="menu__navegacao-links" href="index.html">Calculadora IMC</a>
+            <a class="menu__navegacao-links" href="calculadoraFatororial.html">Calculadora Fatorial</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="container__title">Calculadora de IMC</h1>
+        <section class="container__content">
+            <section class="container__content-form">
+                <h2 class="container__content-form--ask">Escolha um número:</h2>
+                <input id="numero" class="container__content-form--answer" type="number" value="" placeholder="Fatorial de...">
+                <button class="container__content-form--button" id="calcular" onclick="calcularFatorial()">Calcular</button>
+                <h2 id="resultado" class="container__content-form--result">Resultado</h2>
+            </section>
+            <img class="container__content-image" src="/assets/imagens/fatorial.png" alt="Imagem n!">
+        </section>    
+    </main>
+    <footer></footer>
+    <script src="/app.js"></script>
 </body>
 </html>

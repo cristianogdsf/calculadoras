@@ -20,15 +20,16 @@
         <section class="container__content">
             <section class="container__content-form">
                 <h2 class="container__content-form--ask">Peso:</h2>
-                <input class="container__content-form--answer" type="number">
+                <input id="peso" class="container__content-form--answer" type="number" value="" placeholder="Peso:">
                 <h2 class="container__content-form--ask">Altura:</h2>
-                <input class="container__content-form--answer" type="number">
-                <button class="container__content-form--button" id="calcular" onclick="">Calcular</button>
-                <h2 class="container__content-form--result">Resultado</h2>
+                <input id="altura" class="container__content-form--answer" type="number" value="" placeholder="Altura:">
+                <button class="container__content-form--button" id="calcular" onclick="calcularImc()">Calcular</button>
+                <h2 id="resultado" class="container__content-form--result">Resultado</h2>
             </section>
             <img class="container__content-image" src="/assets/imagens/imagem-indice.png" alt="Imagem IMC">
         </section>    
     </main>
     <footer></footer>
+    <script src="/app.js"></script>
 </body>
 </html>
