@@ -43,7 +43,7 @@
     color: var(--cor-quarternaria);
 }
 
-.cabecalho:hover .menu__navegacao {display: block;}
+.show {display: block;}
 
 .cabecalho:hover .menu {
     background-color: var(--cor-terciaria);
@@ -142,6 +142,7 @@ body {
     }
 
     .container__content {
+        flex-direction: column;
         margin: 0 5%;
     }
     
